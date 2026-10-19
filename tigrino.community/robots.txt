@@ -1,0 +1,6 @@
+User-Agent: *
+Allow: /
+Disallow: /api/
+
+Host: https://tigrino.community
+Sitemap: https://tigrino.community/sitemap.xml
