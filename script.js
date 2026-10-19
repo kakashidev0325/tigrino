@@ -1,8 +1,8 @@
 const CONFIG = {
   tokenAddress: "",
   pumpFunUrl: "",
-  twitter: "",
-  telegram: "",
+  twitter: "https://x.com/tigrino_x",
+  telegram: "https://t.me/tigrino_tg",
 };
 
 function getPumpFunUrl() {
@@ -73,6 +73,7 @@ function initSocialLinks() {
 
   document.querySelectorAll("[data-telegram]").forEach((el) => {
     if (CONFIG.telegram) el.href = CONFIG.telegram;
+    else el.hidden = true;
   });
 
   document.querySelectorAll("[data-twitter]").forEach((el) => {

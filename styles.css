@@ -138,7 +138,7 @@ ul, ol { list-style: none; }
   border-left: 1px solid var(--line);
 }
 
-.nav-socials:has(a[hidden]) { display: none; }
+.nav-socials:not(:has(a:not([hidden]))) { display: none; }
 
 .nav-socials a {
   color: var(--gold);
